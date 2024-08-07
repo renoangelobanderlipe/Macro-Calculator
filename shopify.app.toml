@@ -1,3 +1,29 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "e3a3416c1b55c3473577ba54923f5a51"
+name = "macro-calculator"
+handle = "macro-calculator-1"
+application_url = "https://college-specify-optimal-coordinates.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-0225854d.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://college-specify-optimal-coordinates.trycloudflare.com/auth/callback",
+  "https://college-specify-optimal-coordinates.trycloudflare.com/auth/shopify/callback",
+  "https://college-specify-optimal-coordinates.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
